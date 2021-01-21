@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-######* Студент: [Артём Игонин](https://up.htmlacademy.ru/htmlcss/30/user/1708545).
-####* Наставник: [Михаил Маклай](https://htmlacademy.ru/profile/mikhailmaclay).
+* Студент: [Артём Игонин](https://up.htmlacademy.ru/htmlcss/30/user/1708545).
+* Наставник: [Михаил Маклай](https://htmlacademy.ru/profile/mikhailmaclay).
 
 ---
 
