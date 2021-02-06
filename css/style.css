@@ -2,12 +2,11 @@
     --color-basic-red: #EE3643;
     --color-white: white;
     --color-white-30: rgba(255, 255, 255, 0.3);
-    --color-white-50: rgba(255, 255, 255, 0.5);
     --color-black-25: rgba(0, 0, 0, 0.25);
     --color-grandis: #FFD180;
-    --color-grandis-50: rgba(255,209,128, 0.5);
     --color-yellow-orange: #FFBF47;
     --color-pickled-bluewood: #32425C;
+    --color-picked-bluewood-dark: #293449;
 }
 
 /* Button Start */
@@ -77,20 +76,20 @@
     color: inherit;
 }
 
+.link[href]:hover {
+    text-decoration: underline;
+}
+
+.link[href]:active {
+    opacity: 0.5;
+}
+
 .link-white {
     color: var(--color-white)
 }
 
-.linke-white:active {
-    color: var(--color-white-50);
-}
-
 .link-grandis {
     color: var(--color-grandis);
-}
-
-.link-grandis:active {
-    color: var(--color-grandis-50);
 }
 
 .link-wrapper {
@@ -102,15 +101,22 @@
     color: inherit;
 }
 
+.link-page-footer-bottom[href]:active {
+    color: var(--color-basic-red);
+}
+
+/* Page Footer Start */
+
 .page-footer {
     color: white;
     background-color: var(--color-pickled-bluewood);
 }
 
-.page-footer-feedback .link:active,
-.page-footer-developer .link:active {
-    color: var(--color-basic-red);
+.page-footer-bottom {
+    background-color: var(--color-picked-bluewood-dark);
 }
+
+/* Page Footer End */
 
 /* Utils Start */
 
