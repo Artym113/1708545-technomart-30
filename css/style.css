@@ -1,0 +1,133 @@
+:root {
+    --color-basic-red: #EE3643;
+    --color-white: white;
+    --color-white-30: rgba(255, 255, 255, 0.3);
+    --color-white-50: rgba(255, 255, 255, 0.5);
+    --color-black-25: rgba(0, 0, 0, 0.25);
+    --color-grandis: #FFD180;
+    --color-grandis-50: rgba(255,209,128, 0.5);
+    --color-yellow-orange: #FFBF47;
+    --color-pickled-bluewood: #32425C;
+}
+
+/* Button Start */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+
+    height: 38px;
+    padding: 0 15px;
+
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--color-white);
+    background-color: var(--color-basic-red);
+}
+
+.button-white-30 {
+    background-color: var(--color-white-30);
+}
+
+.button-wrapper {
+    display: inline-flex;
+
+    padding: 0;
+
+    vertical-align: top;
+
+    color: inherit;
+    border: none;
+    background-color: transparent;
+}
+
+/* Button End */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 47px;
+
+    vertical-align: top;
+
+    background-color: var(--color-basic-red);
+    box-shadow: inset 0 -5px var(--color-black-25);
+}
+
+.logo-tall {
+    height: 68px;
+}
+
+.logo-img {
+    position: relative;
+    top: -2px;
+}
+
+.link {
+    text-decoration: none;
+    
+    color: inherit;
+}
+
+.link-white {
+    color: var(--color-white)
+}
+
+.linke-white:active {
+    color: var(--color-white-50);
+}
+
+.link-grandis {
+    color: var(--color-grandis);
+}
+
+.link-grandis:active {
+    color: var(--color-grandis-50);
+}
+
+.link-wrapper {
+    display: inline-flex;
+
+    vertical-align: top;
+    text-decoration: inherit;
+
+    color: inherit;
+}
+
+.page-footer {
+    color: white;
+    background-color: var(--color-pickled-bluewood);
+}
+
+.page-footer-feedback .link:active,
+.page-footer-developer .link:active {
+    color: var(--color-basic-red);
+}
+
+/* Utils Start */
+
+.visually-hidden {
+    position: absolute;
+  
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    border: 0;
+}
+
+/* Utils End */
