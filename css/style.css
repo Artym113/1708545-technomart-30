@@ -1,12 +1,21 @@
 :root {
-    --color-basic-red: #EE3643;
+    --color-basic-red-light: #EE3643;
+    --color-basic-red: #CA2C37;
+    --color-basic-red-dark: #BA2732;
     --color-white: white;
     --color-white-30: rgba(255, 255, 255, 0.3);
+    --color-white-50: rgba(255, 255, 255, 0.5);
     --color-black-25: rgba(0, 0, 0, 0.25);
     --color-grandis: #FFD180;
     --color-yellow-orange: #FFBF47;
     --color-pickled-bluewood: #32425C;
     --color-picked-bluewood-dark: #293449;
+    --color-mirage: #161D29;
+    --color-apple-light: #5FBB2D;
+    --color-apple: #63A63E;
+    --color-apple-dark: #518534;
+    --color-basic-background: #F1F5F7;
+    --color-merino: #F9F5F0;
 }
 
 /* Button Start */
@@ -26,7 +35,7 @@
     line-height: 18px;
 
     color: var(--color-white);
-    background-color: var(--color-basic-red);
+    background-color: var(--color-basic-red-light);
 }
 
 .button-white-30 {
@@ -57,7 +66,7 @@
 
     vertical-align: top;
 
-    background-color: var(--color-basic-red);
+    background-color: var(--color-basic-red-light);
     box-shadow: inset 0 -5px var(--color-black-25);
 }
 
@@ -72,7 +81,7 @@
 
 .link {
     text-decoration: none;
-    
+
     color: inherit;
 }
 
@@ -102,7 +111,7 @@
 }
 
 .link-page-footer-bottom[href]:active {
-    color: var(--color-basic-red);
+    color: var(--color-basic-red-light);
 }
 
 /* Page Footer Start */
@@ -122,17 +131,17 @@
 
 .visually-hidden {
     position: absolute;
-  
+
     overflow: hidden;
     clip: rect(0 0 0 0);
-  
+
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
-  
+
     white-space: nowrap;
-  
+
     border: 0;
 }
 
