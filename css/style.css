@@ -16,6 +16,10 @@
     --color-apple-dark: #518534;
     --color-basic-background: #F1F5F7;
     --color-merino: #F9F5F0;
+    --color-picton-blue: #3BBCE3;
+    --color-basic-background: #F1F5F7;
+    --color-light-orchid: #DC91D8;
+    --color-feijoa: #8ED78F;
 }
 
 /* Button Start */
@@ -127,6 +131,24 @@
 
 /* Page Footer End */
 
+.recommendation-card { 
+    box-sizing: border-box;
+    width: 300px;
+    height: 123px;
+    padding: 20px 22px;
+    background-color: var(--color-basic-background);
+}
+
+.recommendation-card-picton-blue {
+    background-color: var(--color-picton-blue);
+}
+
+.recommendation-card-title {
+    margin: 0 0 14px;
+    color: var(--color-white);
+    font-size: 24px;
+    line-height: 30px;
+}
 /* Utils Start */
 
 .visually-hidden {
