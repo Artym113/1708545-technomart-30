@@ -1,155 +1,102 @@
+/* ------------------------------- <Directives>
+*/
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprum.woff2) format("woff2"),
+            url(../fonts/cuprum.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumbold.woff2) format("woff2"),
+            url(../fonts/cuprumbold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumbolditalic.woff2) format("woff2"),
+            url(../fonts/cuprumbolditalic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprumitalic.woff2) format("woff2"),
+            url(../fonts/cuprumitalic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/ptsans.woff2) format("woff2"),
+            url(../fonts/ptsans.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/ptsansbold.woff2) format("woff2"),
+            url(../fonts/ptsansbold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ------------------------------- </Directives>
+*/
+
+/* ------------------------------- <Custom Properties>
+*/
+
 :root {
     --color-basic-red-light: #EE3643;
     --color-basic-red: #CA2C37;
     --color-basic-red-dark: #BA2732;
-    --color-white: white;
+    --color-white: #ffffff;
     --color-white-30: rgba(255, 255, 255, 0.3);
     --color-white-50: rgba(255, 255, 255, 0.5);
+    --color-black: #000000;
     --color-black-25: rgba(0, 0, 0, 0.25);
+    --color-black-30: rgba(0, 0, 0, 0.3);
     --color-grandis: #FFD180;
     --color-yellow-orange: #FFBF47;
     --color-pickled-bluewood: #32425C;
-    --color-picked-bluewood-dark: #293449;
+    --color-pickled-bluewood-dark: #293449;
     --color-mirage: #161D29;
     --color-apple-light: #5FBB2D;
     --color-apple: #63A63E;
     --color-apple-dark: #518534;
+    --color-bilbao: #367315;
     --color-basic-background: #F1F5F7;
     --color-merino: #F9F5F0;
     --color-picton-blue: #3BBCE3;
-    --color-basic-background: #F1F5F7;
     --color-light-orchid: #DC91D8;
     --color-feijoa: #8ED78F;
+    --color-silver: #C5C5C5;
+    --color-silver-30: rgba(197,197,197, 0.3);
+    --color-silver-chalice: #A9A9A9;
+    --color-silver-chalice-30: rgb(169,169,169, 0.3);
+    --color-fiord: #3D546F;
+    --color-ecru-white: #F7F3EC;
+    --color-mercury: #E5E5E5;
+    --color-cornflower-blue-50: rgba(100, 149, 237, 0.5);
+    --color-iron: #D7DCDE;
+    --color-ebony-clay: #212A3A;
+    /*Blue Charcoal*/
 }
 
-/* Button Start */
+/* ------------------------------- </Custom Properties>
+*/
 
-.button {
-    display: inline-flex;
-    align-items: center;
-
-    height: 38px;
-    padding: 0 15px;
-
-    vertical-align: top;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    font-size: 14px;
-    line-height: 18px;
-
-    color: var(--color-white);
-    background-color: var(--color-basic-red-light);
-}
-
-.button-white-30 {
-    background-color: var(--color-white-30);
-}
-
-.button-wrapper {
-    display: inline-flex;
-
-    padding: 0;
-
-    vertical-align: top;
-
-    color: inherit;
-    border: none;
-    background-color: transparent;
-}
-
-/* Button End */
-
-.logo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 220px;
-    height: 47px;
-
-    vertical-align: top;
-
-    background-color: var(--color-basic-red-light);
-    box-shadow: inset 0 -5px var(--color-black-25);
-}
-
-.logo-tall {
-    height: 68px;
-}
-
-.logo-img {
-    position: relative;
-    top: -2px;
-}
-
-.link {
-    text-decoration: none;
-
-    color: inherit;
-}
-
-.link[href]:hover {
-    text-decoration: underline;
-}
-
-.link[href]:active {
-    opacity: 0.5;
-}
-
-.link-white {
-    color: var(--color-white)
-}
-
-.link-grandis {
-    color: var(--color-grandis);
-}
-
-.link-wrapper {
-    display: inline-flex;
-
-    vertical-align: top;
-    text-decoration: inherit;
-
-    color: inherit;
-}
-
-.link-page-footer-bottom[href]:active {
-    color: var(--color-basic-red-light);
-}
-
-/* Page Footer Start */
-
-.page-footer {
-    color: white;
-    background-color: var(--color-pickled-bluewood);
-}
-
-.page-footer-bottom {
-    background-color: var(--color-picked-bluewood-dark);
-}
-
-/* Page Footer End */
-
-.recommendation-card { 
-    box-sizing: border-box;
-    width: 300px;
-    height: 123px;
-    padding: 20px 22px;
-    background-color: var(--color-basic-background);
-}
-
-.recommendation-card-picton-blue {
-    background-color: var(--color-picton-blue);
-}
-
-.recommendation-card-title {
-    margin: 0 0 14px;
-    color: var(--color-white);
-    font-size: 24px;
-    line-height: 30px;
-}
-/* Utils Start */
+/* ------------------------------- <Utils Classes>
+*/
 
 .visually-hidden {
     position: absolute;
@@ -167,4 +114,1084 @@
     border: 0;
 }
 
-/* Utils End */
+/* ------------------------------- </Utils Classes>
+*/
+
+/* ------------------------------- <Common Classes>
+*/
+
+/* <Button>
+*/
+
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 38px;
+        padding: 0 15px;
+
+        vertical-align: top;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color 100ms;
+
+        font-size: 14px;
+        line-height: 18px;
+
+        color: var(--color-white);
+        border: none;
+        outline: none;
+        background-color: var(--color-basic-red-light);
+    }
+
+    .button:hover {
+        background-color: var(--color-basic-red);
+    }
+
+    .button:active {
+        background-color: var(--color-basic-red-dark);
+    }
+
+    .button:focus-visible {
+        outline: var(--color-cornflower-blue-50) solid 2px;
+        outline-offset: 2px;
+    }
+
+    .button .button-icon {
+        margin-right: 8px;
+    }
+
+    /* Button Color Modifiers */
+
+        .button-white-30 {
+            background-color: var(--color-white-30);
+        }
+
+        .button-white-30:hover {
+            background-color: var(--color-silver-30);
+
+        }
+
+        .button-white-30:active {
+            background-color: var(--color-silver-chalice-30);
+            
+        }
+
+        .button-apple {
+            background-color: var(--color-apple);
+
+        }
+
+        .button-apple:hover {
+            background-color: var(--color-apple-light);
+        }
+
+        .button-apple:active {
+            background-color: var(--color-apple-dark);
+        }
+
+    /* Button View Modifiers
+    */
+
+        .button-outlined {
+            border: 1px solid var(--color-mercury);
+            color: var(--color-black);
+            transition: border-color 100ms;
+        }
+
+        .button-outlined,
+        .button-outlined:hover,
+        .button-outlined:active {
+            background-color: transparent;
+        }
+
+        .button-outlined:hover {
+            border-color: var(--color-basic-red-light);
+        }
+
+        .button-outlined:active {
+            border-color: var(--color-silver);
+        }
+
+        /* Button Outlined 2 */
+
+        .button-outlined-2 {
+            border: 3px solid var(--color-basic-red-light);
+            color: var(--color-pickled-bluewood);
+            transition: border-color 100ms, opacity 100ms;
+        }
+
+        .button-outlined-2,
+        .button-outlined-2:hover {
+            background-color: transparent;
+        }
+
+        .button-outlined-2.button-apple {
+            border-color: var(--color-apple);
+        }
+        
+        .button-outlined-2:hover,
+        .button-outlined-2:active {
+            border-color: currentColor;
+        }
+
+        .button-outlined-2:active {
+            background-color: transparent;
+            opacity: 0.5;
+        }
+
+        /* Button Convex */
+
+        .button-convex {
+            box-shadow: inset 0px -3px 0px var(--color-black-30);
+        }
+
+        .button-convex.button-apple {
+            box-shadow: inset 0px -3px 0px var(--color-bilbao);
+        }
+
+        .button-convex .button-icon {
+            opacity: 0.3;
+        }
+
+    /* Button Other Modifiers
+    */
+
+        .button-rounded {
+            border-radius: 2px;
+        }
+        
+        /* Модификация семейства шрифта, так как есть кнопки с PTSans */
+        .button-ptsans {
+            font-family: 'PTSans', 'Arial', sans-serif;
+        }
+
+    /* Button Other Modifiers
+    */
+
+        .button-product-card-buttons {
+            width: 135px;
+        }
+
+/* </Button>
+*/
+
+/* <Button Wrapper>
+*/
+
+    .button-wrapper {
+        display: inline-flex;
+        font: inherit;
+
+        padding: 0;
+
+        vertical-align: top;
+
+        color: inherit;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .button-wrapper:focus-visible {
+        outline: var(--color-cornflower-blue-50) solid 2px;
+        outline-offset: 2px;
+    }
+
+/* </Button Wrapper>
+*/
+
+/* Button Plate Start */
+
+.button-plate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 24px;
+
+    vertical-align: top;
+    text-decoration: none;
+
+    color: inherit;
+    outline: none;
+    background-color: var(--color-white);
+
+    font-size: 21px;
+    font-weight: 21px;
+}
+
+.button-plate:hover {
+    color: var(--color-basic-red-light);
+}
+
+.button-plate:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.button-plate-icon {
+    margin-right: 6px;
+
+    color: var(--color-silver);
+}
+
+.button-plate:hover .button-plate-icon {
+    color: var(--color-fiord);
+}
+
+.button-plate:active {
+    color: var(--color-silver);
+}
+
+.button-plate:active .button-plate-icon {
+    color: inherit;
+}
+
+.button-plate-login {
+    padding: 0 27px 0 19px;
+}
+
+.button-plate-phone {
+    padding: 0 45px 0 39px;
+
+    color: var(--color-basic-red-light);
+    border: 3px solid var(--color-white);
+    background-color: transparent;
+    
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.button-plate-phone .button-plate-icon {
+    margin-right: 16px;
+}
+
+/* Logo Start */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 47px;
+
+    vertical-align: top;
+
+    outline: none;
+    background-color: var(--color-basic-red-light);
+    box-shadow: inset 0 -5px var(--color-black-25);
+}
+
+.logo:active {
+    background-color: var(--color-basic-red-dark);
+}
+
+.logo:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.logo-tall {
+    height: 68px;
+}
+
+.logo-img {
+    position: relative;
+    top: -2px;
+}
+
+/* Logo End */
+
+/* <Link>
+*/
+
+    .link {
+        text-decoration: none;
+
+        color: inherit;
+        outline: none;
+    }
+
+    .link:active {
+        opacity: 0.5;
+    }
+
+    .link:focus-visible {
+        outline: var(--color-cornflower-blue-50) solid 2px;
+        outline-offset: 2px;
+    }
+
+    /* Link Color Modifiers
+    */
+
+    .link-white {
+        color: var(--color-white)
+    }
+
+    .link-grandis {
+        color: var(--color-grandis);
+    }
+
+    /* Link Context Modifiers
+    */
+
+    .link-page-footer:hover {
+        text-decoration: underline;
+    }
+
+    .link-page-footer:active {
+        text-decoration: none;
+    }
+
+    .link-page-footer-bottom:active {
+        color: var(--color-basic-red-light);
+    }
+
+/* </Link>
+*/
+
+
+/* Link End */
+
+/* <Link Wrapper>
+*/
+
+    .link-wrapper {
+        display: inline-flex;
+
+        vertical-align: top;
+        text-decoration: inherit;
+
+        color: inherit;
+        outline: none;
+    }
+
+    .link-wrapper:focus-visible {
+        outline: var(--color-cornflower-blue-50) solid 2px;
+        outline-offset: 2px;
+    }
+
+/* </Link Wrapper>
+*/
+
+/* <Heading>
+*/
+
+    .heading {
+        text-transform: uppercase;
+        
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    /* Heading Color Modifiers
+    */
+
+    .heading-pickled-bluewood {
+        color: var(--color-pickled-bluewood);
+    }
+
+/* ------------------------------- </Common Classes>
+*/
+
+/* ------------------------------- <Structure Classes>
+ */
+
+/* Page Start */
+
+.page {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+/* Page End */
+
+/* Page Body Start */
+
+/* Page Body End */
+
+/* Page Header Start */
+
+.page-header-description {
+    color: var(--color-basic-red-light);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.page-header-contacts{
+    color: var(--color-pickled-bluewood);
+    font-size: 14px;
+}
+
+.page-header {
+    background-color: var(--color-basic-background);
+}
+
+/* Page Header End */
+
+/* Page Main Start */
+
+/* Page Main End */
+
+/* Page Footer Start */
+
+.page-footer {
+    font-size: 18px;
+    line-height: 24px;
+
+    color: var(--color-white);
+    background-color: var(--color-pickled-bluewood);
+}
+
+.page-footer-navigation-list {
+    list-style: none;
+}
+
+.page-footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.page-footer-bottom {
+    background-color: var(--color-pickled-bluewood-dark);
+}
+
+.page-footer-social-list {
+    list-style: none;
+}
+
+/* Page Footer End */
+
+/* ------------------------------- Structure Classes End ------------------------------- */
+
+/* Top Bar Start */
+
+.top-bar {
+    background-color: var(--color-pickled-bluewood-dark);
+}
+
+.top-bar-button-list {
+    list-style: none;
+}
+
+.top-bar-button {
+    text-decoration: none;
+
+    color: var(--color-white);
+    outline: none;
+    font-size: 18px;
+}
+
+.top-bar-button:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.top-bar-button-icon {
+    opacity: 0.3;
+}
+
+.top-bar-button:hover .top-bar-button-icon {
+    opacity: 1;
+}
+
+.top-bar-button:active {
+    color: var(--color-white-50);
+    background-color: var(--color-mirage);
+}
+
+.top-bar-button:active .top-bar-button-icon {
+    opacity: 0.5;
+}
+
+.top-bar-button-apple {
+    background-color: var(--color-apple);
+}
+
+.top-bar-button-apple:hover {
+    background-color: var(--color-apple-light);
+}
+
+/* Top Bar End */
+
+/* Search Start */
+
+.search-control { 
+    border: none;
+    background-color: transparent;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.search-control,
+.search-control::placeholder {
+    color: var(--color-white);
+}
+
+.search-control:active {
+    opacity: 0.5;
+}
+
+.search-control:focus {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+/* Search End */
+
+/* User Navigation Start */
+
+.user-navigation-button-list {
+    list-style: none;
+}
+
+/* User Navigation End */
+
+/* Main Navigation Start */
+
+.main-navigation {
+    background-color: var(--color-pickled-bluewood);
+}
+
+.main-navigation-list {
+    list-style: none;
+}
+
+.main-navigation-link {
+    text-decoration: none;
+
+    color: var(--color-white);
+    outline: none;
+
+    font-size: 18px;
+}
+
+.main-navigation-link:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.main-navigation-link:hover {
+    background-color: var(--color-pickled-bluewood-dark);
+}
+
+.main-navigation-link:active {
+    color: var(--color-white-50);
+    background-color: var(--color-mirage);
+}
+
+/* Main Navigation End */
+
+/* Recommendation Start */
+
+.recommendation-list {
+    list-style: none;
+}
+
+/* Recommendation End */
+
+/* Recommendation Card Start */
+
+.recommendation-card { 
+    box-sizing: border-box;
+    width: 300px;
+    height: 123px;
+    padding: 20px 22px;
+
+    background-color: var(--color-basic-background);
+}
+
+.recommendation-card-picton-blue {
+    background-color: var(--color-picton-blue);
+}
+
+.recommendation-card-yellow-orange {
+    background-color: var(--color-yellow-orange);
+}
+
+.recommendation-card-light-orchid {
+    background-color: var(--color-light-orchid);
+}
+
+.recommendation-card-feijoa {
+    background-color: var(--color-feijoa);
+}
+
+.recommendation-card-title {
+    margin: 0 0 14px;
+
+    color: var(--color-white);
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Recomendation Card End */
+
+/* Slide Start */
+
+.slide-header {
+    color: var(--color-white);
+    background-color: var(--color-black-25);
+
+}
+
+.slide-title {
+    font-size: 36px;
+    line-height: 36px;
+
+}
+
+
+.slide-description {
+    font-size: 18px;
+}
+
+/* Slide End */
+
+/* Plate Start */
+
+.plate {
+    color: var(--color-pickled-bluewood);
+    background-color: var(--color-basic-background);
+}
+
+/* .plate-small {
+    
+} */
+
+.plate-small .plate-heading {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'PTSans', 'Arial', sans-serif;
+    color: var(--color-black);
+}
+
+/* Plate Color Modifiers */
+
+.plate-merino {
+    background-color: var(--color-merino);
+}
+
+.plate-ecru-white {
+    background-color: var(--color-ecru-white);
+}
+
+/* Plate End */
+
+.catalog-list {
+    list-style: none;
+}
+
+/*Popular-Producers Start*/
+
+.producers-list {
+    list-style: none;
+}
+
+/* .producers-item:hover {
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.producers-item:active {
+    opacity: 0.5;
+} */
+
+/*Popular-Producers End*/
+
+/*Services Start*/
+
+.services {
+    background-color: var(--color-basic-background);
+
+}
+
+.services-tab-button {
+   background-color: var(--color-pickled-bluewood);
+   color: var(--color-white);
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 30px;
+}
+
+.services-tab-button:hover {
+    background-color: var(--color-pickled-bluewood-dark);
+}
+
+.services-tab-button:active,
+.services-tab-button-checked,
+.services-tab-button-checked:hover {
+    background-color: var(--color-white);
+    color: var(--color-pickled-bluewood);
+}
+
+.about-us-partners-item {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+/*Services End*/
+
+
+/* ------------------------------- Catalog ------------------------------- */
+
+.top-bar-button-red {
+    background-color: var(--color-basic-red-light);
+}
+
+.top-bar-button-red:hover {
+    background-color: var(--color-basic-red);
+}
+
+.top-bar-button-red:active {
+    background-color: var(--color-basic-red-dark);
+}
+
+/* User Navigation Start */
+
+.user-navigation-link-list {
+    list-style: none;
+}
+
+.user-navigation-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-pickled-bluewood);
+    text-decoration: none;
+}
+
+.user-navigation-link:hover {
+    color: var(--color-basic-red-light);
+}
+
+.user-navigation-link:active {
+    color: var(--color-silver);
+}
+
+/*User Navigation End*/
+
+.button-plate-user-navigation {
+    padding-left: 15px;
+    padding-right: 17px;
+}
+
+.button-plate-user-navigation .button-plate-icon:not(:last-child) {
+    margin-right: 21px;
+}
+
+.button-plate-user-navigation:hover {
+    color: var(--color-pickled-bluewood-dark);
+}
+
+.button-plate-user-navigation .button-plate-item:not(:last-child) {
+    margin-right: 21px;
+}
+
+.button-plate-item {
+    display: inline-flex;
+    align-items: center;
+
+    vertical-align: top;
+}
+
+/* Breadcrumb List Start */
+
+.breadcrumb-list {
+    list-style: none;
+}
+
+/* .breadcrumb-item {
+
+} */
+
+.breadcrumb-link {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-family: 'PTSans', 'Arial', sans-serif;
+    line-height: 18px;
+    color: var(--color-black);
+    
+}
+
+/* Breadcrumb List End */
+
+/* Sorting Start */
+
+/* .sorting {
+    
+} */
+
+.sorting-type-list {
+    list-style: none;
+}
+
+/* .sorting-type-item {
+
+} */
+
+.sorting-type-link {
+    font-family: 'PTSans', 'Arial', sans-serif;
+    color: var(--color-black-30);
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sorting-type-link-underlined {
+    border-bottom: 1px dotted var(--color-basic-red-light);
+}
+
+.sorting-type-link-underlined:hover {
+    border-bottom-style: solid;
+}
+
+.sorting-type-link:hover {
+    color: var(--color-black);
+}
+
+.sorting-type-link:active,
+.sorting-type-link-checked {
+    color: var(--color-basic-red-light);
+    border-bottom: none;
+}
+
+/* Sorting End */
+
+.about-category {
+    background-color: var(--color-basic-background);
+}
+
+/* Pagination Start */
+
+/* .pagination-item {
+
+} */
+
+/* Pagination End */
+
+/* <ProductCard>
+*/
+
+    .product-card {
+        font-family: 'PTSans', 'Arial', sans-serif;
+    }
+
+    /* TODO: Метка нового товара */
+
+    /* .product-card-image {
+        
+    } */
+
+    .product-card-title {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    .product-cart-price-old { 
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: 700;
+        color: var(--color-silver-chalice);
+    }
+
+    .product-cart-price {
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: 700;
+        color: var(--color-white);
+        background-color: var(--color-basic-red-light);
+    }
+
+    .product-card-buttons {
+        display: none;
+    }
+
+
+    /* TODO: Пересмотреть решение, чтобы было доступней */
+    .product-card:hover .product-card-buttons,
+    .product-card-buttons:focus-within,
+    .product-card-buttons-visible {
+        display: block;
+    }
+
+/* </ProductCard>
+*/
+
+/* <Fieldset>
+*/
+
+/* fieldset {
+    
+} */
+.fieldset-legend { 
+    font-family: 'PTSans', 'Arial', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fieldset-field-list {
+    list-style: none;
+}
+
+/* .fieldset-field-item {
+    
+} */
+
+/* </Fieldset>
+*/
+
+/* <InputRange>
+*/
+/* .input-range {
+    
+} */
+
+.input-range-slider {
+    width: 220px;
+    height: 80px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--color-ecru-white);
+}
+
+.input-range-track {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-iron);
+}
+
+.input-range-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-white);
+    transition: transform 100ms;
+}
+
+.input-range-button:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.input-range-button:hover,
+.input-range-button:active {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.input-range-control {
+    font-family: 'PTSans', 'Arial', sans-serif;
+    text-align: center;
+
+    font-size: 17px;
+    line-height: 18px;
+    width: 95px;
+    height: 35px;
+    border: none;
+    background-color: var(--color-ecru-white);
+}
+
+/* </InputRange>
+*/
+
+
+/* <Checkbox>
+
+.checkbox {
+    
+}
+
+.checkbox-control {
+    
+}
+
+.checkbox-label-wrapper {
+    
+}
+
+.checkbox-button {
+    
+}
+*/
+.checkbox-label { 
+    font-family: 'PTSans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/* </Checkbox>
+*/
+
+/* <Radio>
+*/
+
+/* .radio {
+
+}
+
+.radio-control {
+
+} */
+
+.radio-label {
+    font-family: 'PTSans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+/* </Radio>
+*/
+
+.button-round {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-ebony-clay);
+    vertical-align: top;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 100ms;
+    outline: none;
+}
+
+.button-round:focus-visible {
+    outline: var(--color-cornflower-blue-50) solid 2px;
+    outline-offset: 2px;
+}
+
+.button-round:hover,
+.button-round:active {
+    background-color: var(--color-basic-red-light);
+}

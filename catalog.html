@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог - HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon180.png">
@@ -39,29 +40,33 @@
           </li>
         </ul>
       </div>
-      <p class="page-header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      <p class="page-header-description">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
       <div class="page-header-contacts">
-        <a class="button-plate button-plate-important" href="tel:+78125550555">
-          <img src="img/icons/icon-phone.svg" alt="Иконка телефона" width="19" height="19">
+        <a class="button-plate button-plate-phone" href="tel:+78125550555">
+          <svg class="button-plate-icon" width="19" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/>
+          </svg>
           +7 (812) 555-05-55
         </a>
         <button class="button-wrapper" type="button" aria-label="Открыть карту">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</button>
       </div>
       <nav class="user-navigation">
         <h2 class="visually-hidden">Пользовательская навигация</h2>
-        <ul class="user-navigation-button-list">
-          <li class="user-navigation-button-item">
-            <a href="blank.html" aria-label="Страница профиля">
-              <img src="img/icons/icon-user.svg" alt="Иконка пользователь" width="20" height="18">
-              Равшан Джамшутович
-            </a>
-          </li>
-          <li class="user-navigation-button-item">
-            <a href="blank.html" aria-label="Выйти из профиля">
-              <img src="img/icons/icon-exit.svg" alt="Иконка выход" width="20" height="17">
-            </a>
-          </li>
-        </ul>
+        <!-- TODO: Разделить поведение при нажатии и наведении -->
+        <span class="button-plate button-plate-user-navigation" href="blank.html">
+          <a class="link-wrapper button-plate-item" href="blank.html" aria-lable="Страница профиля">
+            <svg class="button-plate-icon" width="20" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.881 14.953c-2.144-.776-4.256-1.759-5.207-2.523-.657-.529-.77-1.708-.517-2.549 1.118-.953 1.864-2.615 1.864-4.516C14.021 2.402 12.221 0 10 0S5.979 2.402 5.979 5.365c0 1.901.746 3.562 1.863 4.515.253.842.141 2.021-.517 2.55-.95.764-3.063 1.746-5.207 2.523C-.026 15.73 0 19 0 19h20s.025-3.271-2.119-4.047z"/>
+            </svg>
+            Равшан Джамшутович
+          </a>
+          <a class="link-wrapper button-plate-item" href="blank.html" aria-label="Выйти из профиля">
+            <svg class="button-plate-icon" width="20" height="17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.167 8.5L5.714 0v6H0v5h5.714v6l8.453-8.5z"/>
+              <path d="M16.177 15.01h-4.788V17h4.788c2.074 0 2.861-1.81 2.885-3.026V3.028C19.038 1.811 18.252 0 16.177 0h-4.788v1.99h4.788c.8 0 .945.681.962 1.057v10.904c-.016.376-.163 1.059-.962 1.059z"/>
+            </svg>
+          </a>
+        </span>
         <ul class="user-navigation-link-list">
           <li class="user-navigation-link-item">
             <a class="user-navigation-link" href="blank.html">Мои заказы</a>
@@ -132,22 +137,24 @@
         </ul>
       </nav>
       <div class="plate">
-        <h2 class="heading">Популярные товары:</h2>
-        <a class="button" href="catalog.html">Все популярные товары</a>
+        <h2 class="heading">Перфораторы</h2>
       </div>
       <div class="filter">
-        <div class="bar">
-          <h2 class="filter-heading">Фильтр</h2>
+        <div class="plate plate-small plate-ecru-white">
+          <h2 class="plate-heading">Фильтр:</h2>
         </div>
         <form action="https://echo.htmlacademy.ru">
           <div class="fieldset">
             <b class="fieldset-legend">Цена</b>
             <div class="input-range">
-              <div class="input-range-track">
-                <button class="input-rage-button" type="button" aria-label="Минимальная цена"></button>
-                <button class="input-rage-button" type="button" aria-label="Максимальная цена цена"></button>
+              <div class="input-range-slider">
+                <div class="input-range-track">
+                  <button class="input-range-button" type="button" aria-label="Минимальная цена"></button>
+                  <button class="input-range-button" type="button" aria-label="Максимальная цена цена"></button>
+                </div>
               </div>
               <input class="input-range-control" type="number" min="0" max="40000" name="price">
+              —
               <input class="input-range-control" type="number" min="0" max="40000" name="price">
             </div>
           </div>
@@ -216,20 +223,20 @@
               </li>
             </ul>
           </div>
-          <button class="button button-white">Показать</button>
+          <button class="button button-outlined button-ptsans">Показать</button>
         </form>
       </div>
-      <div class="sorting bar">
-        <h2 class="sorting-heading">Сортировка</h2>
+      <div class="sorting plate plate-small plate-ecru-white">
+        <h2 class="plate-heading">Сортировка:</h2>
         <ul class="sorting-type-list">
           <li class="sorting-type-item">
-            <a class="sorting-type-link" href="?sort=price">По цене</a>
+            <a class="sorting-type-link sorting-type-link-underlined" href="?sort=price">По цене</a>
           </li>
           <li class="sorting-type-item">
-            <a class="sorting-type-link" href="?sort=type">По типу</a>
+            <a class="sorting-type-link sorting-type-link-underlined" href="?sort=type">По типу</a>
           </li>
           <li class="sorting-type-item">
-            <a class="sorting-type-link" href="?sort=functionality">По функционалу</a>
+            <a class="sorting-type-link sorting-type-link-underlined" href="?sort=functionality">По функционалу</a>
           </li>
           <li class="sorting-type-item">
             <a class="sorting-type-link" href="?order=asc" aria-label="Сортировка по возрастанию">
@@ -252,6 +259,13 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="product-card">
+              <div class="product-card-buttons">
+                <button class="button button-convex button-rounded button-apple button-product-card-buttons" type="button">
+                  <img class="button-icon" src="img/icons/icon-cart.svg" alt="Иконка корзина" width="15" height="15">
+                  Купить
+                </button>
+                <button class="button button-outlined-2 button-rounded button-apple button-product-card-buttons" type="button">В закладки</button>
+              </div>
               <img class="product-card-image" src="img/products/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3>
               <del class="product-cart-price-old">30500 Р.</del>
@@ -268,16 +282,9 @@
           </li>
           <li class="catalog-item">
             <div class="product-card">
-              <div class="product-card-buttons product-card-buttons-visible">
-                <button type="button">
-                  <img src="img/icons/icon-cart.svg" alt="Иконка корзина" width="15" height="15">
-                  Купить
-                </button>
-                <button type="button">В закладки</button>
-              </div>
               <img src="img/products/bosch-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
               <h3 class="product-card-title">Перфоратор BOSCH BFG 6000</h3>
-              <del>30500 Р.</del>
+              <del class="product-cart-price-old">30500 Р.</del>
               <span class="product-cart-price">25500 Р.</span>
             </div>
           </li>
@@ -333,21 +340,21 @@
         <h2 class="visually-hidden">Навигация по страницам</h2>
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="button">1</a>
+            <a class="button button-rounded button-ptsans">1</a>
           </li>
           <li class="pagination-item">
-            <a class="button button-white" href="?page=2" aria-label="Товары 10-19">2</a>
+            <a class="button button-outlined button-rounded button-ptsans" href="?page=2" aria-label="Товары 10-19">2</a>
           </li>
           <li class="pagination-item">
-            <a class="button button-white" href="?page=3" aria-label="Товары 20-29">3</a>
+            <a class="button button-outlined button-rounded button-ptsans" href="?page=3" aria-label="Товары 20-29">3</a>
           </li>
           <li class="pagination-item">
-            <a class="button button-white" href="?page=2">Следующая</a>
+            <a class="button button-outlined button-rounded button-ptsans" href="?page=2">Следующая</a>
           </li>
         </ul>
       </nav>
       <section class="about-category">
-        <h2 class="heading">Пара слов о перфораторах</h2>
+        <h2 class="heading ">Пара слов о перфораторах</h2>
         <p class="text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -361,27 +368,27 @@
       </a>
       <ul class="page-footer-navigation-list">
         <li class="page-footer-navigation-item">
-          <a class="link" href="blank.html">
+          <a class="link link-page-footer" href="blank.html">
             Компания
           </a>
         </li>
         <li class="page-footer-navigation-item">
-          <a class="link" href="blank.html">
+          <a class="link link-page-footer" href="blank.html">
             Новости
           </a>
         </li>
         <li class="page-footer-navigation-item">
-          <a class="link">
+          <a class="link link-page-footer">
             Каталог
           </a>
         </li>
         <li class="page-footer-navigation-item">
-          <a class="link" href="blank.html">
+          <a class="link link-page-footer" href="blank.html">
             Доставка
           </a>
         </li>
         <li class="page-footer-navigation-item">
-          <a class="link" href="blank.html">
+          <a class="link link-page-footer" href="blank.html">
             Контакты
           </a>
         </li>
@@ -390,22 +397,22 @@
         <h2 class="visually-hidden">Навигация по категориям каталога</h2>
         <ul class="page-footer-navigation-list">
           <li class="page-footer-navigation-item">
-            <a class="link link-grandis" href="blank.html">
+            <a class="link link-grandis link-page-footer" href="blank.html">
               Материалы
             </a>
           </li>
           <li class="page-footer-navigation-item">
-            <a class="link link-grandis" href="blank.html">
+            <a class="link link-grandis link-page-footer" href="blank.html">
               Техника
             </a>
           </li>
           <li class="page-footer-navigation-item">
-            <a class="link link-grandis" href="blank.html">
+            <a class="link link-grandis link-page-footer" href="blank.html">
               Инструмент
             </a>
           </li>
           <li class="page-footer-navigation-item">
-            <a class="link link-grandis" href="blank.html">
+            <a class="link link-grandis link-page-footer" href="blank.html">
               Спецпредложения
             </a>
           </li>
@@ -423,28 +430,28 @@
         <ul class="page-footer-social-list">
           <li class="page-footer-social-item">
             <a class="button-round" href="blank.html" aria-label="Наша группа в ВКонтакте">
-              <img class="button-round-icon" src="img/icons/icon-vk.svg" alt="Значок Вконтакте" width="26" height="15">
+              <img class="button-round-icon" src="img/icons/icon-vk.svg" draggable="false" alt="Значок Вконтакте" width="26" height="15">
             </a>
           </li>
           <li class="page-footer-social-item">
             <a class="button-round" href="blank.html" aria-label="Наша группа в Фейсбук">
-              <img class="button-round-icon" src="img/icons/icon-fb.svg" alt="Значок Фейсбук" width="12" height="22">
+              <img class="button-round-icon" src="img/icons/icon-fb.svg" draggable="false" alt="Значок Фейсбук" width="12" height="22">
             </a>
           </li>
           <li class="page-footer-social-item">
             <a class="button-round" href="blank.html" aria-label="Наша страница в Инстаграм">
-              <img class="button-round-icon" src="img/icons/icon-insta.svg" alt="Значок Инстаграм" width="21" height="21">
+              <img class="button-round-icon" src="img/icons/icon-insta.svg" draggable="false" alt="Значок Инстаграм" width="21" height="21">
             </a>
           </li>
         </ul>
         <!-- TODO: Придумать под каким одним классом объединить page-footer-feedback и page-footer-developer -->
         <p class="page-footer-feedback">
           Обратная связь:<br>
-          <a class="link link-grandis link-page-footer-bottom" href="mailto:mail@mail.ru">mail@mail.ru</a>
+          <a class="link link-grandis link-page-footer link-page-footer-bottom" href="mailto:mail@mail.ru">mail@mail.ru</a>
         </p>
         <p class="page-footer-developer">
           Разработано:<br>
-          <a class="link link-grandis link-page-footer-bottom" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="link link-grandis link-page-footer link-page-footer-bottom" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </footer>
